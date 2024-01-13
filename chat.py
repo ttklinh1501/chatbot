@@ -1,9 +1,9 @@
 import random
 import json
-from pre_test_query import tokenize, bag_of_words
+from query import tokenize, bag_of_words
 import numpy as np
 import torch
-from pre_model import NeuralNet
+from model import NeuralNet
 
 device = torch.device('cuda'if torch.cuda.is_available() else 'cpu')
 

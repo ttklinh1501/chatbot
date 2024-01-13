@@ -1,0 +1,289 @@
+{
+    "intents":
+    [
+        {
+           "tag": "Hello",
+           "parttens":[
+                "chào",
+                "xin chào",
+                "hello",
+                "hi",
+                "chào buổi sáng",
+                "chào buổi tối",
+                "chào buổi chiều",
+                "chào hy",
+                "hy có đó không",
+                "hy có ở đây không",
+                "alo"
+           ],
+           "responses":[
+                "Xin chào, rất vui được gặp bạn ^^",
+                "Ngày mới tốt lành, rất vui được gặp bạn.",
+                "Xin chào, thật vui khi được nói chuyện với bạn.",
+                "Xin chào, hình như chũng ta từng gặp nhau rồi phải không?",
+                "Xin chào, chúng mình đã từng nói chuyện với nhau chưa?",
+                "Xin chào, mình là Hy ^^, rất vui được gặp bạn.",
+                "Hello, I'm here with you ^^ \nBạn có ngạc nhiên khi mình nói tiếng Anh không?",
+                "Thật tuyệt khi được gặp bạn, mình vẫn luôn mong chờ bạn đó ^^"
+           ]
+        },
+
+        {
+            "tag": "time",
+            "parttens":[
+                "bây giờ là mấy giờ",
+                "bạn có biết bây giờ là mấy giờ không",
+                "mấy giờ rồi",
+                "what time is it"
+            ],
+            "responses":[
+                "Ui, Tia chưa dạy mình cách xem giờ mất rùi. Bạn mình đồng hồ giúp mình được không?",
+                "Ui làm sao đây? Tia chưa dạy cho mình cách xem giờ :<",
+                "Xin lỗi bạn nhiều nha nhưng mà Tia chưa dạy mình cách xem giờ :<",
+                "Hỏng rùi, Tia chưa dạy cho mình cách xem giờ :<" 
+            ]
+        },
+        {
+            "tag": "test_case",
+            "parttens": [
+                "bạn giúp mình viết test case được không",
+                "bạn giúp mình viết tcs được không",
+                "bạn giúp mình viết testcases được không",
+                "bạn viết testcase giúp mình được không",
+                "viết testcase",
+                "viết tcs",
+                "viết test case",
+                "hướng dẫn viết test cases",
+                "hướng dẫn viết testcase",
+                "hướng dẫn viết tcs"
+            ],
+            "responses":[
+                "Tất nhiên là được rồi ^^, bạn đang muốn viết testcases về giao diện, tính năng hay API?",
+                "Bạn đang muốn mình giúp bạn viết testcases về giao diện, tính năng hay API?",
+                "Bạn đang cần cần viết testcases về tính năng, giao diện hay API?",
+                "Mình có thể giúp bạn đó, hãy cho mình biết bạn đang cần testcases về giao diện, tính năng hay API?",
+                "Tất nhiên là được rùi ^^ nhưng mà bạn đang cần testcases về giao diện, tính năng hay API?",
+                "Hãy nói rõ bạn đang cần testcases về giao diện, tính năng hay API để mình có thể giúp bạn nha.",
+                "Hãy cho mình biết bạn đang cần testcases về giao diện, tính năng hay API để mình có thể giúp bạn nha"
+            ]
+        },
+        {
+            "tag": "tcs_fe",
+            "parttens": [
+                "tôi cần testcases về giao diện",
+                "testcase giao diện",
+                "tcs giao diện",
+                "cần test case giao diện",
+                "testcases về giao diện",
+                "checklist test giao diện"
+            ],
+            "responses": [
+                "Bạn đang cần test giao diện web hay giao diện mobile app?",
+                "Bạn cần mình viết testcase cho giao diện web hay giao diện mobile app?",
+                "Bạn đang cần test trên giao diện web hay là mobile app?",
+                "Vậy bạn muốn mình viết testcase cho giao diện web hay là mobile app?",
+                "Okie, mình cần viết testcase cho giao diện web hay là mobile app nhỉ?"
+            ]
+        },
+        {
+            "tag": "tcs_web",
+            "parttens":[
+                "giao diện web",
+                "tcs giao diện web",
+                "testcase web",
+                "test trên giao diện web",
+                "test cases cho giao diện web",
+                "checklist test giao diện web"
+            ],
+            "responses":[
+            "Nhìn chung, khi bạn viết testcases cho giao diện web, bạn cần lưu ý một vài điều như sau:\n1. Kiểm tra tổng thể giao diện:\n - Tổng thể giao diện phải bám sát với bản thiết kế.(Tài liệu Design)\n - Nếu chưa có bản thiết kế chi tiết cho giao diện web thì tổng thể web được thiết lập theo tài liệu URD.\n - Test trên nhiều trình duyệt khác nhau như: Google Chrome, FireFox, IE,…\n2. Kiểm tra tính hợp lệ:\n - Kiểm tra trường thông tin đang cho phép nhập loại dữ liệu nào (dữ liệu chuỗi, dữ liệu số, dữ liệu nhị phân)\n - Kiểm tra maxlength\n - Cho phép null hay không?\n - Cho phép nhập ký tự đặc biệt hay không (đối với dữ liệu dạng chuỗi)?\n - Kiểm tra giá trị trong và ngoài giới hạn max,min (đối với dữ liệu dạng số)\n3. Kiểm tra duyệt web:\n - Kiểm tra tất cả các trang có thể truy cập được từ menu.\n - Kiểm tra các button điều hướng.\n - Kiểm tra thông báo xác nhận điều hướng (nếu có).",
+            "Mình có một vài gợi ý giúp bạn viết testcases cho giao diện web đây:\n1. Kiểm tra tổng thể giao diện:\n - Tổng thể giao diện phải bám sát với bản thiết kế.(Tài liệu Design)\n - Nếu chưa có bản thiết kế chi tiết cho giao diện web thì tổng thể web được thiết lập theo tài liệu URD.\n - Test trên nhiều trình duyệt khác nhau như: Google Chrome, FireFox, IE,…\n2. Kiểm tra tính hợp lệ:\n - Kiểm tra trường thông tin đang cho phép nhập loại dữ liệu nào (dữ liệu chuỗi, dữ liệu số, dữ liệu nhị phân)\n - Kiểm tra maxlength\n - Cho phép null hay không?\n - Cho phép nhập ký tự đặc biệt hay không (đối với dữ liệu dạng chuỗi)?\n - Kiểm tra giá trị trong và ngoài giới hạn max,min (đối với dữ liệu dạng số)\n3. Kiểm tra duyệt web:\n - Kiểm tra tất cả các trang có thể truy cập được từ menu.\n - Kiểm tra các button điều hướng.\n - Kiểm tra thông báo xác nhận điều hướng (nếu có)."
+            ]
+        },
+        {
+            "tag": "lu",
+            "parttens":[
+                "Tớ nhớ cậu",
+                "Tớ nhớ cậu ấy rồi"
+            ],
+            "responses":[
+                "Tớ không hiểu, rốt cuộc cậu đang nhớ cậu ấy hay là nhớ cảm giác cậu ấy ở bên...",
+                "Tớ sẽ không khuyên cậu đừng nhớ cậu ấy, chỉ là cậu thật sự nhớ cậu ấy sao?",
+                "Cậu hiểu rõ mà, phải không? Rằng nếu đã đánh mất rồi thì sẽ không quay trở về được đâu...",
+                "Thật xin lỗi...",
+                "Thật xin lỗi, tớ không hiểu."
+            ]
+        },
+        {
+            "tag": "tcs_mobile",
+            "parttens": [
+                "viết testcases mobile app",
+                "tcs mobile app",
+                "test giao diện mobile app",
+                "giao diện mobile app",
+                "test cases cho mobile app",
+                "checklist test mobile app"
+            ],
+            "responses": [
+                "Nếu là viết testcases cho mobile app thì mình có vài gợi ý cho bạn đây:\n - Kiểm tra tất cả tính năng hiện có trên ứng dụng.\n - Kiểm tra hiệu năng của mobile app (tốc độ khởi động app, tốc độ xử lý dữ liệu...).\n - Kiểm tra tổng thể giao diện mobile app có bám sát với bản thiết kế hay không?\n - Kiểm tra độ tương thích thiết bị (trên hai hệ điều hành chủ yếu là IOS và Android).\n - Kiểm tra cài đặt và gỡ cài đặt ứng dụng.\n - Kiểm tra bản cập nhật.\n - Kiểm tra các thao tác cơ bản trên app.\n - Kiểm tra độ tương thích của giao diện app đối với các kích cỡ màn hình và độ phân giải khác nhau.\n - Kiểm tra thiết lập ngôn ngữ đối với các ngôn ngữ khác nhau.\n - Kiểm tra bảo mật: Khi thoát ứng dụng có logout tài khoản người dùng hay không? Có lưu thông tin người dùng hay không?\n - Kiểm tra cài đặt sinh trắc học (nếu có).\n - Kiểm tra tương thích giao diện khi xoay dọc hoặc xoay ngang màn hình (nếu có).",
+                "Testcases cho mobile app sao? Mình nghĩ bạn cần lưu ý mấy cái này:\n - Kiểm tra tất cả tính năng hiện có trên ứng dụng.\n - Kiểm tra hiệu năng của mobile app (tốc độ khởi động app, tốc độ xử lý dữ liệu...).\n - Kiểm tra tổng thể giao diện mobile app có bám sát với bản thiết kế hay không?\n - Kiểm tra độ tương thích thiết bị (trên hai hệ điều hành chủ yếu là IOS và Android).\n - Kiểm tra cài đặt và gỡ cài đặt ứng dụng.\n - Kiểm tra bản cập nhật.\n - Kiểm tra các thao tác cơ bản trên app.\n - Kiểm tra độ tương thích của giao diện app đối với các kích cỡ màn hình và độ phân giải khác nhau.\n - Kiểm tra thiết lập ngôn ngữ đối với các ngôn ngữ khác nhau.\n - Kiểm tra bảo mật: Khi thoát ứng dụng có logout tài khoản người dùng hay không? Có lưu thông tin người dùng hay không?\n - Kiểm tra cài đặt sinh trắc học (nếu có).\n - Kiểm tra tương thích giao diện khi xoay dọc hoặc xoay ngang màn hình (nếu có)."
+            ]
+        },
+        {
+            "tag": "tcs_tính_năng",
+            "parttens":[
+                "testcases có tính năng",
+                "tcs tính năng hệ thống",
+                "test tính năng",
+                "test case tính năng",
+                "checklist test tính năng",
+                "checklist kiểm thử tính năng",
+                "kiểm thử tính năng hệ thống"
+            ],
+            "responses": [
+                "Bạn muốn test tính năng gì, hãy mô tả cho Hy biết nha ^^",
+                "Mình có thế giúp bạn đó nhưng mà hãy cho mình biết bạn muốn test tính năng gì nha.",
+                "Bạn đang muốn test tính năng gì đó? Hãy nói cho mình biết để mình giúp bạn tạo checklist nha.",
+                "Tính năng bạn đang cần test là gì vậy? :3",
+                "Bạn đang test tính năng gì đó? Mô tả thêm cho Hy biết nha."
+            ]
+        },
+        {
+            "tag": "đăng_nhập_mobile_checker",
+            "parttens": [
+                "tcs đăng nhập mobile app khdn",
+                "testcases tính năng đăng nhập app mobile checker",
+                "ví dụ testcases cho tính năng đăng nhập trên mobile app",
+                "mẫu testcases cho tính năng đăng nhập trên monile app,",
+                "test case đăng nhập mb khdn",
+                "tcs đăng nhập mb khdn",
+                "viết tcs đăng nhập trên mobile app"
+            ],
+            "responses": [
+                "Mình có một mẫu testcases về tính năng đăng nhập trên app Mobile Checker cho bạn tham khảo nè:\n1. Màn hình Đăng nhập lần đầu\n - Kiểm tra icon chọn ngôn ngữ hệ thống\n - Bỏ trống các trường\n - Nhập sai trường 'Tên đăng nhập'\n - Nhập sai trường 'Mật khẩu'\n - Nhập sai 'Mật khẩu' quá số lần quy định\n - Nhập sai trường 'Mật khẩu'\n - Nhập sai 'Mật khẩu' quá số lần quy định\n - Nhập đúng tên đăng nhập và mật khẩu\n - Out-focus Botttomsheet 'Kích hoạt Smart OTP'\n - Không tick chọn Tôi đồng ý với 'Điều khoản và điều kiện...'\n - Tick chọn Tôi đồng ý với 'Điều khoản và điều kiện...' và Tap 'Kích hoạt'\n - Kiểm tra Hypelink Quên mật khẩu\n - Kiểm tra Hypelink SmartOTP khi chưa kích hoạt smartOTP\n - Kiểm tra Hypelink SmartOTP khi đã kích hoạt smartOTP\n2. Màn hình Đăng nhập sau lần đầu:\n - Kiểm tra giao diện\n3. Màn hình Đăng nhập khi đã cài đặt đăng nhập bằng vân tay/faceID:\n - Đăng nhập bằng vân tay/faceID_Chưa bật Cài đặt đăng nhập bằng vân tay/faceID trên app\n - Đăng nhập bằng vân tay/faceID_Đã bật cài đặt đăng nhập bằng vân tay/faceID\n - Kiểm tra nút Hủy\n - Đăng nhập bằng vân tay/FaceID khi đã cài đặt nhưng thiết bị không nhận diện được\n - Đăng nhập bằng vân tay/FaceID khi đã cài đặt và thiết bị nhận diện đúng\n4. Màn hình Quên mật khẩu:\n - Kiểm tra button Xác nhận\n - Kiểm tra khi nhập sai Tên đăng nhập\n - Kiểm tra khi nhập sai số điện thoại\n - Kiểm tra nhập đúng tên đăng nhập và số điện thoại\n - Nhập đúng Tên đăng nhập nhưng dịch vụ Internet Banking của user đã bị khóa, hủy\n5. Màn hình Nhập mã xác thực:\n - Kiểm tra khi Nhập sai mã OTP\n - Kiểm tra khi nhập chính xác mã OTP\n6. Màn hình Thay đổi mật khẩu:\n - Kiểm tra button Xác nhận - Không nhập đủ thông tin\n - Kiểm tra nhập thông tin ở 'Mật khẩu mới' và 'Xác nhận mật khẩu mới' không trùng nhau\n - Kiểm tra khi Mật khẩu không đúng định dạng\n - Nhập thông tin đổi mật khẩu hợp lệ\n - Kiểm tra nút Về đăng nhập",
+                "Mình có một ví dụ có thể giúp bạn viết testcases cho tính năng đăng nhập trên mobile app nè:\n1. Màn hình Đăng nhập lần đầu\n - Kiểm tra icon chọn ngôn ngữ hệ thống\n - Bỏ trống các trường\n - Nhập sai trường 'Tên đăng nhập'\n - Nhập sai trường 'Mật khẩu'\n - Nhập sai 'Mật khẩu' quá số lần quy định\n - Nhập sai trường 'Mật khẩu'\n - Nhập sai 'Mật khẩu' quá số lần quy định\n - Nhập đúng tên đăng nhập và mật khẩu\n - Out-focus Botttomsheet 'Kích hoạt Smart OTP'\n - Không tick chọn Tôi đồng ý với 'Điều khoản và điều kiện...'\n - Tick chọn Tôi đồng ý với 'Điều khoản và điều kiện...' và Tap 'Kích hoạt'\n - Kiểm tra Hypelink Quên mật khẩu\n - Kiểm tra Hypelink SmartOTP khi chưa kích hoạt smartOTP\n - Kiểm tra Hypelink SmartOTP khi đã kích hoạt smartOTP\n2. Màn hình Đăng nhập sau lần đầu:\n - Kiểm tra giao diện\n3. Màn hình Đăng nhập khi đã cài đặt đăng nhập bằng vân tay/faceID:\n - Đăng nhập bằng vân tay/faceID_Chưa bật Cài đặt đăng nhập bằng vân tay/faceID trên app\n - Đăng nhập bằng vân tay/faceID_Đã bật cài đặt đăng nhập bằng vân tay/faceID\n - Kiểm tra nút Hủy\n - Đăng nhập bằng vân tay/FaceID khi đã cài đặt nhưng thiết bị không nhận diện được\n - Đăng nhập bằng vân tay/FaceID khi đã cài đặt và thiết bị nhận diện đúng\n4. Màn hình Quên mật khẩu:\n - Kiểm tra button Xác nhận\n - Kiểm tra khi nhập sai Tên đăng nhập\n - Kiểm tra khi nhập sai số điện thoại\n - Kiểm tra nhập đúng tên đăng nhập và số điện thoại\n - Nhập đúng Tên đăng nhập nhưng dịch vụ Internet Banking của user đã bị khóa, hủy\n5. Màn hình Nhập mã xác thực:\n - Kiểm tra khi Nhập sai mã OTP\n - Kiểm tra khi nhập chính xác mã OTP\n6. Màn hình Thay đổi mật khẩu:\n - Kiểm tra button Xác nhận - Không nhập đủ thông tin\n - Kiểm tra nhập thông tin ở 'Mật khẩu mới' và 'Xác nhận mật khẩu mới' không trùng nhau\n - Kiểm tra khi Mật khẩu không đúng định dạng\n - Nhập thông tin đổi mật khẩu hợp lệ\n - Kiểm tra nút Về đăng nhập"
+            ]
+        },
+        {
+            "tag": "ttptsp",
+            "parttens": [
+                "cấu trúc trung tâm phát triển sản phẩm",
+                "digital product center structure",
+                "trung tâm phát triển sản phẩm có cấu trúc như thế nào",
+                "trung tâm phát triển sản phẩm gồm những bộ phận nào"
+            ],
+            "responses":[
+                "Cấu trúc điển hình bao gồm:\n - UI/UX\n - QA/QC\n - BA\n - Operation",
+                "Cấu trúc có thể bao gồm:\n - UI/UX\n - QA/QC\n - BA\n - Operation"
+            ]
+        },
+        {
+            "tag": "Iniactive",
+            "parttens":[
+                "iniactive là gì",
+                "iniactive của nhs là gì",
+                "khái niệm iniactive"
+            ],
+            "responses":[
+                "Iniactive là một khái niệm thuộc riêng về Ngân hàng số:\n - Là các kênh phân phối (IB/MB) hoặc các dự án trọng điểm của Ngân hàng số.\n - Chỉ sử dụng cho Epic thuộc Ngân hàng số, liên kết các Epic thuộc nhiều Product Domain khác nhau.\n - Không sử dụng để phân loại, gom nhóm các Epic trong cùng Project.\n - Do PM cùng xây dựng và quản lý với các PO."
+            ]
+        },
+        {
+            "tag": "epic",
+            "parttens":[
+                "epic là gì",
+                "epic trên jira là gì",
+                "khái niệm cơ bản của epic"
+            ],
+            "responses":[
+                "Epic về cơ bản là:\n - Các yêu cầu phát triển của Ngân hàng số.\n - Workflow cho Epic bao gồm các bước: UIUX, URD, SRS, CODE, UAT/OAT, Launching/Release.\n - Bao gồm các Story/Task/Document... thuộc nhiều Project khác nhau (theo cả Feature và Chapter).\n - Chỉ được assign cho PO, PO chịu hoàn toàn trách nhiệm cho việc hoàn thiện và phát hành Epic.\n - Chỉ PM của từng Domain được sắp xếp thứ tự ưu tiên, làm cơ sở để làm việc cùng các Chapter."
+            ]
+        },
+        {
+            "tag": "you",
+            "parttens":[
+                "bạn biết tôi là ai không",
+                "tôi là ai",
+                "bạn có đoán được tôi là ai không",
+                "bạn có biết tôi không"
+            ],
+            "responses":[
+                "Bạn có thể cho mình một vài gợi ý hem :3 Ví dụ như tên của bạn là gì :>",
+                "Cho mình một vài gợi ý đi biết đâu mình thật sự biết bạn đó :3",
+                "Hmmm bạn thuộc QC team, DEV team hay là một team khác?",
+                "Bạn có cùng team với Tia không? Nếu có hãy nhập 'Tia's teammate' để mình thử đoán xem bạn là ai nha :3",
+                "Bạn có thường xuyên làm việc với Tia không? Nếu có thì bạn thuộc QC team, DEV team hay là một team khác?",
+                "Tên của bạn là gì? Biết đâu mình thật sự có thông tin về bạn đó :>"
+            ]
+        },
+        {
+            "tag": "epic_workflow",
+            "parttens": [
+                "epic workflow",
+                "epic workflow trong một project"
+            ],
+            "responses":[
+                "Epic workflow trong một Project bao gồm:\n1, PO tạo Epic đưa ra mục tiêu và mô tả yêu cầu nghiệp vụ (theo tài liệu BRD)\n 2, Designer xây dựng UI/UX, hỗ trợ wireframe trong quá trình xây dựng URD\n 3, PO xây dựng tài liệu URD\n 4, SA xây dựng và đưa ra giải pháp về kiến trúc hệ thống\n 5, BA xây dựng tài liệu SRS (bao gồm Sequence Diagram)\n 6, DEV team phát triển dựa trên các tài liệu SRS, URD và UI/UX\n 7, QC/QA thực hiện kiểm thử UAT\n 8. Giai đoạn Release"
+            ]
+        },
+        {
+            "tag": "tcs",
+            "parttens":[
+                "các thành phần cơ bản của testcases",
+                "test case cơ bản bao gồm những phần nào",
+                "tcs thường bao gồm những gì",
+                "một file test case cơ bản bao gồm những phần nào",
+                "các thành phần để xây dựng testcases cơ bản"
+            ],
+            "responses":[
+                "Mình nghĩ một file testcase cơ bản bao gồm:\n - Id\n - Tittle\n - Description\n - Data\n - Result\n - Expected result\n - Evidence\n - Step\n - Environment\n - Type",
+                "Theo mình thì các thành phần trong một file testcase cơ bản bao gồm:\n - Id\n - Tittle\n - Description\n - Data\n - Result\n - Expected result\n - Evidence\n - Step\n - Environment\n - Type"
+            ]
+        },
+        {
+            "tag": "tcs_giao_diện_chung_mobile_app",
+            "parttens": [
+                "tcs giao diện chung của mobile app",
+                "test case giao diện trang chủ mobile app",
+                "testcases màn hình trang chủ mobile app",
+                "tcs giao diện chung mobile checker",
+                "tcs giao diện chung mb khdn",
+                "tcs giao diện chung mobile banking khdn"
+            ],
+            "responses":[
+                "Mình có một ví dụ về testcases cho phần giao diện chung của mb (mobile checker) nè:\n1. Màn hình trang chủ:\n - Kiểm tra giao diện\n - Kiểm tra avatar\n - Kiểm tra icon menu\n - Kiểm tra hiển thị thông tin khách hàng\n - Kiểm tra thông tin TK được phân quyền\n - Kiểm tra thông tin các giao dịch chờ duyệt\n2. Menu Cài đặt:\n - Kiểm tra các chức năng ở menu cài đặt\n - Kiểm tra giao diện chức năng Cài đặt\n - Kiểm tra bật Cài đặt đăng nhập bằng vân tay/Face ID khi chưa cài đặt Biometrics cho device\n - Kiểm tra bật tắt chức năng đăng nhập bằng vân tay/FaceID\n - Kiểm tra thay đổi ngôn ngữ\n - Kiểm tra chức năng Đăng xuất\n - Kiểm tra xem thông tin HDSD\n - Kiểm tra xem thông tin Q&A\n3. Chức năng Đổi mật khẩu:\n - Kiểm tra button Xác nhận - Không nhập thông tin\n -  Nhập sai mật khẩu cũ\n - Nhập mật khẩu mới không đúng quy định\n -  Mật khẩu mới và nhập lại mật khẩu mới không khớp\n - Kiểm tra button Lưu - nhập mật khẩu mới trùng với mật khẩu cũ (của 3 lần gần nhất)\n - Nhập đúng và đủ thông tin\n4. Thay Avatar:\n - Kiểm tra cho phép đổi avatar\n - Sau khi thay đổi avatar thành công\n - Check avatar khi đăng nhập trên thiết bị khác\n5. Kiểm tra chức năng thông báo:\n - Kiểm tra thông báo khi maker gửi GD cần duyệt (Checker được cài đặt quy trình duyệt)\n - Kiểm tra số thông báo chưa đọc\n - Kiểm tra chi tiết thông báo",
+                "Bạn có thể tham khảo testcases của phần giao diện chung trên app mobile checker nè:\n1. Màn hình trang chủ:\n - Kiểm tra giao diện\n - Kiểm tra avatar\n - Kiểm tra icon menu\n - Kiểm tra hiển thị thông tin khách hàng\n - Kiểm tra thông tin TK được phân quyền\n - Kiểm tra thông tin các giao dịch chờ duyệt\n2. Menu Cài đặt:\n - Kiểm tra các chức năng ở menu cài đặt\n - Kiểm tra giao diện chức năng Cài đặt\n - Kiểm tra bật Cài đặt đăng nhập bằng vân tay/Face ID khi chưa cài đặt Biometrics cho device\n - Kiểm tra bật tắt chức năng đăng nhập bằng vân tay/FaceID\n - Kiểm tra thay đổi ngôn ngữ\n - Kiểm tra chức năng Đăng xuất\n - Kiểm tra xem thông tin HDSD\n - Kiểm tra xem thông tin Q&A\n3. Chức năng Đổi mật khẩu:\n - Kiểm tra button Xác nhận - Không nhập thông tin\n -  Nhập sai mật khẩu cũ\n - Nhập mật khẩu mới không đúng quy định\n -  Mật khẩu mới và nhập lại mật khẩu mới không khớp\n - Kiểm tra button Lưu - nhập mật khẩu mới trùng với mật khẩu cũ (của 3 lần gần nhất)\n - Nhập đúng và đủ thông tin\n4. Thay Avatar:\n - Kiểm tra cho phép đổi avatar\n - Sau khi thay đổi avatar thành công\n - Check avatar khi đăng nhập trên thiết bị khác\n5. Kiểm tra chức năng thông báo:\n - Kiểm tra thông báo khi maker gửi GD cần duyệt (Checker được cài đặt quy trình duyệt)\n - Kiểm tra số thông báo chưa đọc\n - Kiểm tra chi tiết thông báo"
+            ]
+        },
+        {
+            "tag": "đổi_mk",
+            "parttens":[
+                "tcs chức năng đổi mật khẩu",
+                "testcases đổi mật khẩu",
+                "test cases tính năng đổi mật khẩu",
+                "test đổi mật khẩu"
+            ],
+            "responses":[
+                "Mình có gợi ý cho bạn đây:\n1. Kiểm tra Chức năng Đổi mật khẩu:\n - Kiểm tra button Xác nhận - Không nhập thông tin\n - Nhập sai mật khẩu cũ\n - Nhập mật khẩu mới không đúng quy định\n - Mật khẩu mới và nhập lại mật khẩu mới không khớp\n - Kiểm tra button Lưu - nhập mật khẩu mới trùng với mật khẩu cũ (của 3 lần gần nhất)\n - Nhập đúng và đủ thông tin",
+                "Bạn có thể viết theo ví dụ này nha:\n1. Kiểm tra Chức năng Đổi mật khẩu:\n - Kiểm tra button Xác nhận - Không nhập thông tin\n - Nhập sai mật khẩu cũ\n - Nhập mật khẩu mới không đúng quy định\n - Mật khẩu mới và nhập lại mật khẩu mới không khớp\n - Kiểm tra button Lưu - nhập mật khẩu mới trùng với mật khẩu cũ (của 3 lần gần nhất)\n - Nhập đúng và đủ thông tin"
+            ]
+        },
+        {
+            "tag": "biometric_login",
+            "parttens":[
+                "tcs login bằng biometric",
+                "testcases biometric login",
+                "test case đăng nhập bằng sinh trắc học",
+                "tcs đăng nhập bằng sinh trắc học trên mobile app",
+                "tcs đăng nhập bằng vân tay",
+                "tcs đăng nhập bằng xác thực gương mặt",
+                "tcs đăng nhập bằng faceid touchid",
+                "tcs đăng nhập bằng touchid/faceid"
+            ],
+            "responses":[
+                "Bạn thử mẫu testcases này xem:\n1. Kiểm tra đăng nhập bằng xác thực sinh trắc học trên thiết bị:\n - Đăng nhập bằng touchID/faceID_Chưa bật Cài đặt đăng nhập bằng touchID/faceID trên app\n - Đăng nhập bằng touchID/faceID_Đã bật cài đặt đăng nhập bằng touchID/faceID\n - Đăng nhập bằng touchID/faceID khi đã cài đặt nhưng thiết bị không nhận diện được\n - Đăng nhập bằng touchID/faceID khi đã cài đặt và thiết bị nhận diện đúng",
+                "Bạn có thể viết testcases theo ví dụ này:\n1. Kiểm tra đăng nhập bằng xác thực sinh trắc học trên thiết bị:\n - Đăng nhập bằng touchID/faceID_Chưa bật Cài đặt đăng nhập bằng touchID/faceID trên app\n - Đăng nhập bằng touchID/faceID_Đã bật cài đặt đăng nhập bằng touchID/faceID\n - Đăng nhập bằng touchID/faceID khi đã cài đặt nhưng thiết bị không nhận diện được\n - Đăng nhập bằng touchID/faceID khi đã cài đặt và thiết bị nhận diện đúng"
+            ]
+        }
+    ]
+}
